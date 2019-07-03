@@ -1,0 +1,110 @@
+
+<html>
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<title>Langytbiru - Jual Baju dan Busana Muslim</title>
+	<script src="http://code.jquery.com/jquery-3.4.1.js"
+  			integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  			crossorigin="anonymous">
+	</script>
+	<script type="text/javascript">
+		
+		function Masuk() {
+		var email = document.getElementById("email").value;
+		var katasandi = document.getElementById("katasandi").value;
+		var recaptcha = document.getElementById("recaptcha");
+		if (email != "" && katasandi !="") { 
+			recaptcha.style.display="block";
+		}
+		else if(email !=""){
+			alert('kata sandi belum diisi !\n');
+		}else if (katasandi !=""){
+			alert('Email atau Telepon belum diisi !\n');
+		}else{
+			alert('Email & Password belum diisi !');
+		}
+	}
+		</script>
+
+	<!-- <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="./style/style.css">
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+<body>
+	<div class="container-fluid">
+
+		<div class="row" id="header"> 	
+		<div class="col-sm-12">
+			<div class="header">
+				<div class="col-sm-6">
+					<span style="position:absolute;left : 40px;top: 5px; "> <img src="./assets/merkregis.png"> </span>	
+				</div>
+				<div>
+				<form  type="text" style="position: absolute; right: 500px; color: black; top: 2%;font-size:12px;font-family: Helvetica, Arial, sans-serif">Email atau Telepon</form>
+				<form type="text" style="position: absolute;right: 355px; color: black;top: 2%;font-size:12px;font-family: Helvetica, Arial, sans-serif">Kata Sandi</form>
+				</div>
+				<div id="recaptcha" style="display:none; position: absolute; padding: 60px 0px 0px 1050px" class="g-recaptcha" data-sitekey="6LeMp6sUAAAAAMPexjJN5_cTMsdVl4U8n8-i0fJt"></div>
+
+				<div style="position: absolute; right: 175px; top: 5%;">
+					<input id="email" type="text" style="width: 150px;height: 22px;" class="registration_form"></input> &emsp;
+					<input id="katasandi" type="Password" style="width: 150px; height: 22px;" class="registration_form"></input> &emsp;
+					<button onclick="Masuk();" style="background-color:black; color: white; height: 22px;"><b>Masuk</b></button>
+		    		<br>
+					<a href="#" style="color:blue;text-decoration: none;position: relative;left: 200px;font-size: 10px;">Lupa akun?</a>
+				</div>
+				</div>			
+			</div>	
+		</div>	
+		</div>
+		<!-- end header -->
+
+		<!-- content -->
+		<div class="row" id="content">
+
+			<div class="col-md-6">
+				<div class="left">
+					<span style="font-family: gabriola; font-style: italic;
+					color: grey;font-size: 22px; width: 500px; word-spacing: -1;display: block; position: relative; left: 100px;margin: 2%; text-align: center;">"Lets spend the moments with our loved ones and embrance all the little things that bring us closer together with langytbiru"</span>
+				</div> 
+				<div class="bungkus">
+					<div class="gambar">
+						<img src="./assets/purple.jpg" width="260px" height="330px">
+					</div>
+					<div class="gambar">
+						<img src="./assets/purple2.jpg" width="260px" height="330px">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-6">		
+			<div class="right">
+					<span style="color: #333; font-size: 36px;font-family: Helvetica, Arial, sans-serif; font-weight: 700;">Create an account</span>	<br><br>
+					<span style="color: #1d2129; font-size: 18px; font-family: Helvetica, Arial, sans-serif; margin-left: 8px;">It's free and always will be.</span>
+				<br>
+				<br>
+					<form>
+						<input class="registration_form" required type="text" placeholder="Nama Depan" style="width: 250px;"></input>
+						<input class="registration_form" required type="text" placeholder="Nama Belakang" style="width: 250px;"></input>
+						<input class="registration_form" required type="text" placeholder="Alamat email" style="width: 515px;"></input>
+						<input class="registration_form" required type="text" placeholder="Kata Sandi Baru" style="width: 515px;"></input><br><br>
+						<span style="color: #1d2129; font-size: 18px; margin-left: 8px; font-family: Hevetica, Arial, sans-serif;">Birthday</span><br>
+						<input class="registration_form" type="date" name="date"><br>
+						<input type="radio" name="gender" value="male" checked> Male
+						<input type="radio" name="gender" value="female"> Female<br>
+
+							<p class="terms_and_conditionts" style="font-size: 12px;" margin-left: 8px;>
+								By clicking Create an account, you agree to our Terms and confirm that you have read our Data Policy, <br> including our cokiee
+								Policy You may receive SMS messagge notifications from Langytbiru.id and out any time. </p>
+
+						<button id="Masuk">Create an account</button><br>
+					</form>
+			</div>
+		</div>			
+
+	
+		<!-- endcontetn -->
+	</div>
+
+</body>
+</html>

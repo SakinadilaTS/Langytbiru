@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Langytbiru - Jual Baju dan Busana Muslim</title>
+	<!-- <link rel="stylesheet" type="text/css" href=".\bootstrap-4.3.1-dist\css\bootstrap.min.css">  --><!-- sesuaikan file bootstrapnya, min = versi minify dr bootstrap, bisa yg lain tp ini dah cukup -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!-- agar halaman terlihat lebih responsive -->
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+  <style type="text/css">
+    #merk:hover{
+      cursor: pointer;
+    }
+    /*BODY*/
+    body{
+      background-color: whitesmoke;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .Kiri{
+  height: 300px;
+  width: 25%;
+  float: left;
+  margin-top: 100px;
+  }
+  .logo{
+  background-image: url(./assets/profil.jpg);
+  background-size: 200px 200px;
+  height: 200px;
+  width: 200px;
+  padding-top: 10px;
+  margin-top: 20px;
+  margin-left: 60px;
+  margin-bottom: 20px;
+  border-radius:50% 
+  }
+  h3{
+  font-family: gabriola;
+  margin-left: 25px;
+  width: 280px;
+  }
+  .sidebar{
+  width: 25%;
+  height: 500px;
+  }
+  .akun{
+  margin-left: 110px;
+  width: 100px;
+  }
+  .akun:hover{
+    cursor: pointer;
+    opacity: 0.4;
+  }
+  .Kanan{
+  height:auto;
+  width: 75%;
+  float: right;
+  }
+  .choose{
+  height: 50px;
+  width: 900px;
+  margin-left: 50px;
+  margin-top: 100px;
+  padding-top: 15px;
+  display:flex;
+  justify-content: center;
+  }
+  .pilih1{
+  background-color: white;
+  width: 250px;
+  height:50px;
+  }
+  .pilih2{
+  background-color: white;
+  width: 250px;
+  height:50px;
+  }
+  .pilih3{
+  background-color: white;
+  width: 250px;
+  height:50px;
+  }
+  .pilih4{
+  background-color: white;
+  width: 250px;
+  height:50px;
+  }
+  .pilih5{
+  background-color: white;
+  width: 250px;
+  height:50px;
+  }
+  .menu{
+    padding-top: 10px;
+  }
+  .menu:hover{
+  opacity: 0.4;
+  cursor: pointer;
+  background-color: lightgrey;
+  }
+  .pesanan{
+  background-color: white;
+  height:400px;
+  width: 900px;
+  margin-left: 50px;
+  margin-top: 50px;
+  display:flex;
+  justify-content: center;
+  }
+  .ket{
+  padding: 200px;
+  margin-left: 50px;
+  color: grey;
+  font-size: 16pt;
+  }
+  .text-left:hover{
+  cursor: pointer;
+  opacity: 0.4;
+  }
+  </style>
+</head>
+<body>
+      <div class="fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
+      <div> <a href="./assets/index.html"><img src="./assets/merk.png" id="merk"> </a></div>
+
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+         <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+
+
+            <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Hijab</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="Crinkle.html">Crinkle Shawl</a>
+              <a class="dropdown-item" href="Aatirah.html">Aatirah Shawl</a>
+              <a class="dropdown-item"  href="Waffle.html">Waffle  Shawl</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Clothes</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="Catalog.html">Top Clothes</a>
+              <a class="dropdown-item" href="Pants.html">Pants</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown" >
+               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Accessories</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="Pin.html">Hijab Pin</a>
+            </div>
+          </li>
+             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+           <button class="btn btn-outline-dark my-2 my-sm-0" type="submit" style="height: 37px ">Search</button>
+          </ul>
+        </div>
+    </nav>
+  </div>
+
+
+  <div class="Kiri">
+  <div class="logo"></div>
+      <h3 align="center">Sakinadila Tariti Solecha</h3>
+  <div class="sidebar">
+    <div class="akun" >Akun Saya</div>
+    <div class="akun" >Pesanan Saya</div>
+    <div class="akun" >Notifikasi</div>
+    <div class="akun">Pengaturan</div>
+    </div>
+  </div>
+
+    <div id="Kanan">
+  <div class="choose">
+  <div class="menu pilih1" align="center">Belum Bayar</div>
+  <div class="menu pilih2" align="center">Dikemas</div>
+  <div class="menu pilih3" align="center">Dikirim</div>
+  <div class="menu pilih4" align="center">Selesai</div>
+  <div class="menu pilih5" align="center">Dibatalkan</div>
+  </div>
+    <nav class="pesanan">
+      <h1 class="ket">Belum ada pesanan</h1>
+    </nav>
+  </div>
+
+
+  <div class="col-12" style="background-color:black; color: white;padding-top:50px; margin-top: 50px;">
+  <p class="text-center" style="font-size: 2rem;">Subcribe Newsletter</p>
+  <p class="text-center"><b>Stay updated for new collection & special offer</b></p>
+  <input type="text" name="email" placeholder="                     TYPE YOUR EMAIL" style="width: 300px;height: 30px; background-color: black; color: white; border: none; margin-left: 525px; ">
+  <hr noshade="10" width="800px" color= "grey">
+</div>
+    <div class="row" style="background-color:black; color: white;">
+    <div class="col-md-3" style="margin-top: 50px; margin-left: 270px;">
+    <p class="text-left"><b>INFORMASI</b></p>
+  <p class="text-left">Tentang Kami</p>
+  <p class="text-left">Syarat Penggunaan</p>
+  <p class="text-left">Ketentuan Privasi</p>
+  <p class="text-left">Kontak Kami</p>
+    </div>
+    
+    <div class="col-md-3"  style="margin-top: 50px;">
+    <p class="text-left"><b>BANTUAN</b></p>
+  <p class="text-left">Bayar di Tempat</p>
+  <p class="text-left">Cara Pemesanan</p>
+  <p class="text-left">Ketentuan Pengembalian</p>
+  <p class="text-left">Ketentuan Retur Produk</p>
+  </div>  
+
+    <div class="col-md-3"  style="margin-top: 50px;">
+    <p class="text-left"><b>TOKO ONLINE LAINNYA</b></p>
+  <p class="text-left">Yahbodoamat</p>
+  </div>  
+   <div class="col-md-3"  style="margin-top: 50px; margin-right: 100px;">
+  </div>  
+
+    <div class="col-md-12" style="padding-right: 150px;">
+    <p class="text-center"><b>DOWNLOAD LANGYTBIRU APP</b></p>
+    <p class="text-center" style="font-style: italic;">Shop anytime, easier than ever!</p>
+      <img src="./assets/IOS.png" width="100" height="100" style="margin-left: 500px;">
+      <img src="./assets/ANDROID.png" width="115" height="35" style="margin-left: 10px;">
+  </div>
+  </div>
+</body>
+</html>
+
+ 

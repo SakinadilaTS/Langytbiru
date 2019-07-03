@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Langytbiru - Jual Baju dan Busana Muslim</title>
+  <!-- <link rel="stylesheet" type="text/css" href=".\bootstrap-4.3.1-dist\css\bootstrap.min.css"> --> <!-- sesuaikan file bootstrapnya, min = versi minify dr bootstrap, bisa yg lain tp ini dah cukup -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!-- agar halaman terlihat lebih responsive -->
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <style type="text/css">
+  /*HEADER*/
+    .fixed-top{
+      background-color: white;
+    }
+    #merk:hover{
+      cursor: pointer;
+    }
+  /*BODY*/  
+    body{
+    background-color:whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+    .img-fluid{
+    max-width: 100%;
+    height: auto;
+    }
+    .text{
+    font-style: italic;
+    color: grey;
+    max-width: 100%;
+    height: auto;
+    margin: 50px;
+    }
+    .items{
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 20px;
+    }
+    .card-img-top:hover{
+    cursor: pointer;
+    opacity: 0.4;
+    }
+    .card-title{
+    text-align: center;
+    font-family: arial;
+    }
+    .card-title:hover{
+    cursor: pointer;
+    opacity: 0.4;
+    }
+    .card-text{
+    text-align: center;
+    font-family: arial;
+    color: red;
+    }
+    .card-text:hover{
+    cursor: pointer;
+    opacity: 0.4;
+    }
+    .text-left:hover{
+    cursor: pointer;
+    opacity: 0.4;
+  }
+  </style>
+</head>
+<body>
+
+<!--  HEADER     -->
+
+    <div class="fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
+      <div> <a href="./assets/index.html"><img src="./assets/merk.png" id="merk"> </a></div>
+
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+         <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+
+
+            <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Hijab</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="Crinkle.html">Crinkle Shawl</a>
+              <a class="dropdown-item" href="Aatirah.html">Aatirah Shawl</a>
+              <a class="dropdown-item"  href="Waffle.html">Waffle  Shawl</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Clothes</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="Catalog.html">Top Clothes</a>
+              <a class="dropdown-item" href="Pants.html">Pants</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown" >
+               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Accessories</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="Pin.html">Hijab Pin</a>
+            </div>
+          </li>
+             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+           <button class="btn btn-outline-dark my-2 my-sm-0" type="submit" style="height: 37px ">Search</button>
+          </ul>
+        </div>
+    </nav>
+  </div>
+
+  <!-- FOTO MBAKNYA -->
+    <img src="./assets/ss.jpg" class="img-fluid" alt="Responsive image" style="margin-top: 70px;">
+  <!-- TEXT QUOTES -->
+  <div align="center" class="text">"We are the global community that celebrates and empowers <br>
+    the hijab-wearing woman by designing innovative products <br>
+  fueled by an obsession with superior service and craftsmanship."</div>
+
+  <!-- CATALOG -->
+
+  <div class="row class">
+    <div class="col-md-3">
+      <div class="items">
+      <img class="card-img-top" src="./assets/s1.jpg">
+      <div class="card-body"></div>
+      <div class="card-title"><h5><b>Kizia Top Maroon</b></h5></div>
+      <div class="card-text"><b>IDR 199.000</b></div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="items">
+      <img class="card-img-top" src="./assets/s2.jpg">
+      <div class="card-body"></div>
+      <div class="card-title"><h5><b>Kinar Top Brown</b></h5></div>
+      <div class="card-text"><b>IDR 199.000</b></div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="items">
+      <img class="card-img-top" src="./assets/s3.jpg">
+      <div class="card-body"></div>
+      <div class="card-title"><h5><b>Kinar Top Baby Blue</b></h5></div>
+      <div class="card-text"><b>IDR 199.000</b></div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="items">
+      <img class="card-img-top" src="./assets/s1.jpg">
+      <div class="card-body"></div>
+      <div class="card-title"><h5><b>Sabella Top Grey</b></h5></div>
+      <div class="card-text"><b>IDR 239.000</b></div>
+      </div>
+    </div>
+
+    
+
+  <!-- FOOTER -->
+  <div class="footer" style="background-color:black; color: white;padding-top:50px; margin-top: 50px;">
+  <p class="text-center" style="font-size: 2rem;">Subcribe Newsletter</p>
+  <p class="text-center"><b>Stay updated for new collection & special offer</b></p>
+  <input type="text" name="email" placeholder="                     TYPE YOUR EMAIL" style="width: 300px;height: 30px; background-color: black; color: white; border: none; margin-left: 525px; ">
+  <hr noshade="10" width="800px" color= "grey">
+</div>
+    <div class="row" style="background-color:black; color: white;">
+    <div class="col-md-3" style="margin-top: 50px; margin-left: 250px;">
+    <p class="text-left" ><b>INFORMASI</b></p>
+  <p class="text-left">Tentang Kami</p>
+  <p class="text-left">Syarat Penggunaan</p>
+  <p class="text-left">Ketentuan Privasi</p>
+  <p class="text-left">Kontak Kami</p>
+    </div>
+    
+    <div class="col-md-3"  style="margin-top: 50px;">
+    <p class="text-left"><b>BANTUAN</b></p>
+  <p class="text-left">Bayar di Tempat</p>
+  <p class="text-left">Cara Pemesanan</p>
+  <p class="text-left">Ketentuan Pengembalian</p>
+  <p class="text-left">Ketentuan Retur Produk</p>
+  </div>  
+
+    <div class="col-md-3"  style="margin-top: 50px;">
+    <p class="text-left"><b>TOKO ONLINE LAINNYA</b></p>
+  <p class="text-left">Yahbodoamat</p>
+  </div>  
+
+  <div class="col-md-12" style="margin-top: 50px; ">
+    <p class="text-center"><b>DOWNLOAD LANGYTBIRU APP</b></p>
+    <p class="text-center" style="font-style: italic;">Shop anytime, easier than ever!</p>
+      <img src="./assets/IOS.png" width="100" height="100" style="margin-left: 550px">
+      <img src="./assets/ANDROID.png" width="115" height="35" style="margin-left: 10px;">
+  </div>
+  </div>
+</body>
+</html>
